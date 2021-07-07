@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #333
+}
+
+#container {
+    height: auto;
+    width: auto;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #d4e0ee;
+}
+#start {
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    padding: 20px 0;
+    background: #e7f1fa;
+    color: #000;
+    font-size: 23px;
+    font-weight: 700;
+    border-radius: 30px 10px;
+    border: 1px solid #b0c4d8;
+    cursor: pointer;
+}
+#start:hover {
+    background: #21bf73;
+    color: #e7f1fa;
+}
+#start a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: #555;
+    color: #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px
+}
+
+.container>p {
+    font-size: 32px
+}
+
+.question {
+    width: 75%
+}
+
+.options {
+    position: relative;
+    padding-left: 40px
+}
+.options:hover{
+    background-color: salmon;
+}
+
+.options:active{
+    background-color: salmon;
+}
+
+#options p {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    cursor: pointer
+}
+
+
+
+.btn-success {
+    padding: 5px 25px;
+    background-color: #21bf73
+}
+
+@media(max-width:576px) {
+    .question {
+        width: 100%;
+        word-spacing: 2px
+    }
+}
